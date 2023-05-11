@@ -53,4 +53,8 @@
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
     </ItemGroup>
 
+	<ItemGroup Condition="$(TargetFramework.Contains('-ios'))">
+		<PackageReference Include="Xamarin.Google.iOS.MobileAds" Version="8.13.0.3" />
+	</ItemGroup>
+
 </Project>
